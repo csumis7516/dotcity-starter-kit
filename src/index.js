@@ -53,7 +53,8 @@ app.Container = Backbone.Model.extend({
   defaults: {
     name: 'test',
     data: '',
-    cid: 0
+    cid: 0,
+    temp: 0
   },
   // AutomationJS plugins
   parseJSON: function() {
@@ -80,7 +81,7 @@ app.Container = Backbone.Model.extend({
   },
   // Y-Axis getter
   getY: function() {
-    return this.get('temperature');
+    return this.get('temp');
   }
 });
 

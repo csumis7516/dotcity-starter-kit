@@ -1,8 +1,8 @@
 {
-  "name": "dotcity-starter-kit",
-  "version": "0.0.3",
+  "name": "jollen-starter-kit",
+  "version": "0.0.4",
   "preview": ["images/preview.png"],
-  "description": "Help makers making Internet of Personal Things.",
+  "description": "Example of [Hello IoT App](http://wotcity.com/guide/hello-iot-app/zh-tw)",
   "dependencies": {
     "async": "~0.2.9",
     "automationjs": "^0.1.3",

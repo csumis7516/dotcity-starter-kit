@@ -40700,7 +40700,7 @@ else {
 // use this instance. Else, load via commonjs.
 module.exports = (typeof window !== 'undefined') && window['moment'] || require('moment');
 
-},{"moment":170}],116:[function(require,module,exports){
+},{"moment":99}],116:[function(require,module,exports){
 var util = require('../util');
 var Node = require('./Node');
 
@@ -67778,8 +67778,6 @@ if(typeof define == 'function' && define.amd) {
 
 
 },{}],170:[function(require,module,exports){
-module.exports=require(99)
-},{}],171:[function(require,module,exports){
 /**
  *
  *  .CITY Starter Kit
@@ -67835,7 +67833,8 @@ app.Container = Backbone.Model.extend({
   defaults: {
     name: 'test',
     data: '',
-    cid: 0
+    cid: 0,
+    temp: 0
   },
   // AutomationJS plugins
   parseJSON: function() {
@@ -67862,7 +67861,7 @@ app.Container = Backbone.Model.extend({
   },
   // Y-Axis getter
   getY: function() {
-    return this.get('temperature');
+    return this.get('temp');
   }
 });
 
@@ -67927,4 +67926,4 @@ $(function() {
   Backbone.history.start();
 });
 
-},{"automationjs":1,"backbone":79,"jquery":98,"moment":99,"underscore":100,"vis":101}]},{},[171])
+},{"automationjs":1,"backbone":79,"jquery":98,"moment":99,"underscore":100,"vis":101}]},{},[170])

@@ -24,7 +24,7 @@ client.on('connect', function(connection) {
         if (connection.connected) {
             // 1 to 30
             var lucky = Math.round(Math.random() * 30 + 1);
-            var obj = {temperature: lucky};
+            var obj = {temp: lucky};
 
             console.log('Pushing: ' + JSON.stringify(obj));
 
